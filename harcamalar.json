@@ -1,0 +1,27 @@
+[
+    {
+        "ad": "kahve",
+        "tutar": 120.0,
+        "kategori": "yiyecek"
+    },
+    {
+        "ad": "hamburger",
+        "tutar": 280.0,
+        "kategori": "yiyecek"
+    },
+    {
+        "ad": "otobüs",
+        "tutar": 30.0,
+        "kategori": "ulaşım"
+    },
+    {
+        "ad": "uçak",
+        "tutar": 1800.0,
+        "kategori": "ulaşım"
+    },
+    {
+        "ad": "tshirt",
+        "tutar": 1600.0,
+        "kategori": "kıyafet"
+    }
+]
