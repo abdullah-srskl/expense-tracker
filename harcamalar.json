@@ -23,5 +23,20 @@
         "ad": "tshirt",
         "tutar": 1600.0,
         "kategori": "kıyafet"
+    },
+    {
+        "ad": "kazak",
+        "tutar": 800.0,
+        "kategori": "kıyafet"
+    },
+    {
+        "ad": "antibiyotik",
+        "tutar": 236.0,
+        "kategori": "sağlık"
+    },
+    {
+        "ad": "makarna",
+        "tutar": 200.0,
+        "kategori": "yiyecek"
     }
 ]

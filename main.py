@@ -1,4 +1,5 @@
 import json
+import matplotlib.pyplot as plt
 
 harcamalar = []
 
@@ -11,7 +12,9 @@ def menu_goster():
     print("4- Kategoriye göre harcamaları listele")
     print("5- Harcama sil")
     print("6- Harcama Güncelleme")
-    print("7- Çıkış...")
+    print("7- Grafik göster")
+    print("8- Pasta grafik göster")
+    print("9- Çıkış")
 
 def verileri_kaydet():
     with open("harcamalar.json", "w", encoding="utf-8") as dosya:
@@ -172,6 +175,55 @@ def kategoriye_gore_listele():
         print("Bu kategoride harcama bulunamadı.")
 
 
+def grafik_goster():
+    if len(harcamalar) == 0:
+        print("Gösterilecek harcama yok.")
+        return
+
+    kategoriler = {}
+
+    for harcama in harcamalar:
+        kategori = harcama["kategori"]
+        tutar = harcama["tutar"]
+
+        if kategori in kategoriler:
+            kategoriler[kategori] += tutar
+        else:
+            kategoriler[kategori] = tutar
+
+    isimler = list(kategoriler.keys())
+    degerler = list(kategoriler.values())
+
+    plt.bar(isimler, degerler)
+    plt.title("Kategoriye Göre Harcamalar")
+    plt.xlabel("Kategori")
+    plt.ylabel("Tutar (TL)")
+    plt.show()
+
+
+def pasta_grafik_goster():
+    if len(harcamalar) == 0:
+        print("Gösterilecek harcama yok.")
+        return
+
+    kategoriler = {}
+
+    for harcama in harcamalar:
+        kategori = harcama["kategori"]
+        tutar = harcama["tutar"]
+
+        if kategori in kategoriler:
+            kategoriler[kategori] += tutar
+        else:
+            kategoriler[kategori] = tutar
+
+    isimler = list(kategoriler.keys())
+    degerler = list(kategoriler.values())
+
+    plt.pie(degerler, labels=isimler, autopct="%1.1f%%")
+    plt.title("Kategoriye Göre Harcama Dağılımı")
+    plt.show()
+
 verileri_yukle()
 
 while True:
@@ -197,5 +249,11 @@ while True:
         harcama_guncelle()
 
     elif secim == "7":
+        grafik_goster()
+
+    elif secim == "8":
+        pasta_grafik_goster()
+
+    elif secim == "9":
         print("Programdan çıkılıyor...")
         break
