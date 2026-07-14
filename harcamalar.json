@@ -2,41 +2,67 @@
     {
         "ad": "kahve",
         "tutar": 120.0,
-        "kategori": "yiyecek"
+        "kategori": "yiyecek",
+        "tarih": "Tarih yok"
     },
     {
         "ad": "hamburger",
         "tutar": 280.0,
-        "kategori": "yiyecek"
+        "kategori": "yiyecek",
+        "tarih": "Tarih yok"
     },
     {
         "ad": "otobüs",
         "tutar": 30.0,
-        "kategori": "ulaşım"
+        "kategori": "ulaşım",
+        "tarih": "Tarih yok"
     },
     {
         "ad": "uçak",
-        "tutar": 1800.0,
-        "kategori": "ulaşım"
+        "tutar": 1950.0,
+        "kategori": "ulaşım",
+        "tarih": "Tarih yok"
     },
     {
         "ad": "tshirt",
         "tutar": 1600.0,
-        "kategori": "kıyafet"
+        "kategori": "kıyafet",
+        "tarih": "Tarih yok"
     },
     {
         "ad": "kazak",
         "tutar": 800.0,
-        "kategori": "kıyafet"
+        "kategori": "kıyafet",
+        "tarih": "Tarih yok"
     },
     {
         "ad": "antibiyotik",
         "tutar": 236.0,
-        "kategori": "sağlık"
+        "kategori": "sağlık",
+        "tarih": "Tarih yok"
     },
     {
         "ad": "makarna",
         "tutar": 200.0,
-        "kategori": "yiyecek"
+        "kategori": "yiyecek",
+        "tarih": "Tarih yok"
+    },
+    {
+        "ad": "süpürge",
+        "tutar": 4000.0,
+        "kategori": "ev ihtiyacı",
+        "tarih": "Tarih yok"
+    },
+    {
+        "ad": "sütlaç",
+        "tutar": 120.0,
+        "kategori": "yiyecek",
+        "tarih": "2026-04-27"
+    },
+    {
+        "ad": "tava",
+        "tutar": 1500.0,
+        "kategori": "ev ihtiyacı",
+        "tarih": "2026-05-06"
     }
 ]
